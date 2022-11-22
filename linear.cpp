@@ -1,5 +1,19 @@
 #include <iostream>
 using namespace std;
+//Linear search in an array
+//creating a function of searching an array
+int search(int arr[], int n, int b)
+{
+    for(int i=0;i<n;i++){
+        if(arr[i]==b){
+            cout<<"Key found at "<<endl;
+            return i;
+        }
+        }
+        cout<<"Key not found"<<endl;
+        return 0;
+        }
+ 
 int main()
 {
     cout<<"Enter the size of the array"<<endl;
@@ -7,19 +21,11 @@ int main()
     cin>>n;
     int arr[n];
      cout<<"Enter elements of the array"<<endl;
-    for(int i=1;i<=n;i++){
+    for(int i=0;i<n;i++){
        cin>>arr[i];
-    cout<<"Enter your key";
+    }
+    cout<<"Enter your key"<<endl;
     int b;
     cin>>b;
-    for(int j=0;j<=n;j++){
-        if(arr[j]==b){
-            cout<<j;
-        }
-        else{
-            cout<<"Key not found";
-        }
-    }
-
-}
+    cout<<search(arr,n,b);
 }
