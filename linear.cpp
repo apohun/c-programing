@@ -16,10 +16,32 @@ int search(int arr[], int n, int b)
  
 int main()
 {
-    cout<<"Enter the size of the array"<<endl;
-    int n;
-    cin>>n;
+    cout << "Enter the size of the array" << endl;
+    int n, i;
+    cin >> n;
     int arr[n];
+    cout << "Enter elements of the array" << endl;
+    for ( i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+        cout << "Enter your key";
+        int b;
+        cin >> b;
+        for (i = 0; i < n; i++)
+        {
+            if (arr[i] == b)
+            {
+                printf("found at %d", i);
+                break;
+            }
+        }
+        if (i == n)
+        {
+            printf(" not found");
+        }
+    }
+
      cout<<"Enter elements of the array"<<endl;
     for(int i=0;i<n;i++){
        cin>>arr[i];
