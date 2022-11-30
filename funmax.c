@@ -1,17 +1,13 @@
 #include<stdio.h>
-
-
-int max(int val[],int size)
+int value,m=0;
+int max(int);
+int max(int y)
 {
-    int m=val[0];   //storing first value of array
-    for(int j=0;j<size;j++)   
-    {
-        if(max<val[j]) //comparing first value with second
+        if(m<y) //comparing first value with second
         {
-            m=val[j]; //transfering max value between two- to m
+            m=y; //transfering max value between two- to m
         }
-    }
-    printf("%d",m); // printing max value of the array
+    return m;
 } 
 
 
@@ -19,9 +15,12 @@ int main()
 {
     int a=4;    //limit for array
     int arr[a];
+    printf("enetr 4 values");
     for(int i=0;i<4;i++)    // loop for value from user
     {
         scanf("%d",&arr[i]);
-      int value=max(arr[i],a);  //calling fun max
+        int x=arr[i];
+       value=max(x);  //calling fun max
     }
+      printf("%d",value); // printing max value of the array
 }
