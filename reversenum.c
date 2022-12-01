@@ -1,6 +1,4 @@
-
 #include<stdio.h>
-#include<conio.h>
 int main()
 {
     int n,arr[n];
@@ -17,6 +15,6 @@ int main()
          printf("%d",arr[j]);
         
      }
-     getch();
+
 }
 
